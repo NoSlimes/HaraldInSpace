@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 1866359271}
   - component: {fileID: 1866359270}
   - component: {fileID: 1866359273}
+  - component: {fileID: 1866359274}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -459,9 +460,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866359268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40edff1056ad4194a8e9185484791402, type: 3}
+  m_Script: {fileID: 11500000, guid: 8674f7434a89bf14c9cf7d4c0165e17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseSensitivity: 100
+  playerBody: {fileID: 2139785142}
+--- !u!114 &1866359274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866359268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82746699c60bcda46bac32d084f661c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1435192258258332542, guid: 66c67568420900240a606c489212cfb5,
+    type: 3}
+  origin: {fileID: 1866359268}
+  launchVelocity: 700
+  maxAccuracyOff: 0.1
+  minAccuracyOff: -0.1
 --- !u!1 &2077955027
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +633,7 @@ GameObject:
   - component: {fileID: 2139785141}
   - component: {fileID: 2139785140}
   - component: {fileID: 2139785139}
+  - component: {fileID: 2139785143}
   m_Layer: 0
   m_Name: Harald
   m_TagString: Untagged
@@ -699,3 +721,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2139785143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139785138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e8c05fb2e3047bdb20258b4e40d88c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10
+  lookatspeed: 5

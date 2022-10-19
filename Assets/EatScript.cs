@@ -8,6 +8,6 @@ public class EatScript : MonoBehaviour
 
     private void Eat()
     {
-        playerStats.HP = //något
+        playerStats.HP = 0;//något
     }
 }

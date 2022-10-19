@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
             playerBody.AddRelativeForce(Vector3.left * -movementSpeed * Time.deltaTime);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space))
         {
             playerBody.AddRelativeForce(Vector3.up * jumpStrength * Time.deltaTime); 
         }

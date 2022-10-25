@@ -7,9 +7,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float movementSpeed = 1000;
     public float jumpStrength = 100000;
+    [SerializeField] private Animator animator;
 
-
-    public Rigidbody playerBody;
+    private Rigidbody playerBody;
    
 
     bool isGrounded; 
@@ -17,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
 
-
-
+        animator = GetComponentInChildren<Animator>();
+        playerBody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             playerBody.AddRelativeForce(Vector3.forward * movementSpeed * Time.deltaTime);
+            
 
         }
         else if (Input.GetKey(KeyCode.S))
@@ -53,6 +54,14 @@ public class PlayerMovement : MonoBehaviour
             playerBody.AddRelativeForce(Vector3.up * jumpStrength * Time.deltaTime); 
         }
         
+        if(playerBody.velocity != Vector3.zero)
+        {
+            animator.SetBool("Walking", true);
+        }
+        else
+        {
+            animator.SetBool("Walking", false);
+        }
 
     }
     

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8667489740732753633}
   - component: {fileID: 878231129629677019}
   - component: {fileID: 6387688253062791359}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 1137185211495913408}
   - component: {fileID: 2016768362193174766}
   - component: {fileID: 5993604633925772392}
-  m_Layer: 0
+  - component: {fileID: -8651347861056579855}
+  m_Layer: 31
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,3 +168,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &-8651347861056579855
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8542873268265636515}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.5690001, y: 3.5000002, z: 1.5690001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3.5000002, z: 0}
+  m_TimeToStationary: 0.5

@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 9103831827385127115}
   - component: {fileID: 2500047218275665800}
   - component: {fileID: 6892790626291531916}
-  m_Layer: 0
+  - component: {fileID: 3535960807186333772}
+  m_Layer: 31
   m_Name: House_Distance_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &3535960807186333772
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819167872401931177}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 12.1, y: 28.202002, z: 12.1}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 28.202002, z: 0}
+  m_TimeToStationary: 0.5

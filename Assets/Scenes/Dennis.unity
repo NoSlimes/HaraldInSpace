@@ -505,15 +505,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866359268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82746699c60bcda46bac32d084f661c2, type: 3}
+  m_Script: {fileID: 11500000, guid: f5a5d1d4cd27871468cf7f1488f7df0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1435192258258332542, guid: 66c67568420900240a606c489212cfb5,
     type: 3}
   origin: {fileID: 1866359268}
-  launchVelocity: 700
-  maxAccuracyOff: 0.1
-  minAccuracyOff: -0.1
+  launchVelocity: 200
+  badAccuracy: 100
 --- !u!1 &2077955027
 GameObject:
   m_ObjectHideFlags: 0

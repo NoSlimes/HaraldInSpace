@@ -6,10 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float movementSpeed = 1000;
-    public float jumpStrength = 100000;
+    public float jumpStrength = 10000;
     [SerializeField] private Animator animator;
+    public float sprintSpeed = 2000;
+    public float defaultmovementSpeed = 1000; 
 
     private Rigidbody playerBody;
+    private Camera Camera; 
    
 
     bool isGrounded; 
@@ -19,6 +22,13 @@ public class PlayerMovement : MonoBehaviour
 
         animator = GetComponentInChildren<Animator>();
         playerBody = GetComponent<Rigidbody>();
+        Camera = GetComponentInChildren<Camera>(); 
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        isGrounded = true;
+        Debug.Log("isGrounded"); 
     }
 
     void Update()
@@ -49,9 +59,12 @@ public class PlayerMovement : MonoBehaviour
             playerBody.AddRelativeForce(Vector3.left * -movementSpeed * Time.deltaTime);
         }
 
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space) && isGrounded)
         {
-            playerBody.AddRelativeForce(Vector3.up * jumpStrength * Time.deltaTime); 
+            playerBody.AddRelativeForce(Vector3.up * jumpStrength * Time.deltaTime);
+            isGrounded = false;
+
+            Debug.Log("Jumping"); 
         }
         
         if(playerBody.velocity != Vector3.zero)
@@ -63,6 +76,20 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Walking", false);
         }
 
+        //sprint// 
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            movementSpeed = sprintSpeed;
+            Camera.fieldOfView = 120f; 
+
+        }
+        else
+        {
+            movementSpeed = defaultmovementSpeed;
+            Camera.fieldOfView = 60f;
+        }
+
+             
     }
     
 

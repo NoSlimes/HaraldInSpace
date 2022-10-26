@@ -9,5 +9,21 @@ public class EatScript : MonoBehaviour
     private void Eat()
     {
         playerStats.HP = 0;//något
+       
+ 
+   
     }
+     void Update()
+    {
+        if (Input.GetButtonDown("Fire2")) 
+        {
+            playerStats.HP++;
+
+            Debug.Log("Health");
+
+
+        }
+
+    }
+
 }

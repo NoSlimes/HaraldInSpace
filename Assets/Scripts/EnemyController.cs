@@ -14,11 +14,11 @@ public class EnemyController : MonoBehaviour
 
     //bool _stuck = false;
     public bool stunned = false;
-    private EnemyEngine _engine;
+    [SerializeField]private EnemyEngine _engine;
     void Start()
     {
-        _target = GameObject.Find("/Player/Body").transform;
-        _engine = GetComponent<EnemyEngine>();
+        //_target = GameObject.Find("/Player/Body").transform;
+        //_engine = GetComponent<EnemyEngine>();
 
     }
 

@@ -6,7 +6,7 @@ public class projectile : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag != "Player" || collision.transform.tag != "projectile")
+        if (collision.transform.tag != "Player" && collision.transform.tag != "projectile")
             Destroy(this.gameObject);
     }
 }

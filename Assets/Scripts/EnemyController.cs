@@ -2,23 +2,22 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    //private float _timeOutTime = .1f;
-    public float lookDistance = 1f;
-    public float wanderRadius = 100f;
-    //public static bool isPlayerDetected;
+    [SerializeField]private float lookDistance = 1f;
+    [SerializeField]private float wanderRadius = 100f;
+    public static bool isPlayerDetected;
     [SerializeField] GameObject rayOrigin;
 
     public LayerMask ignore;
-    private Transform _target;
+    //private Transform _target;
 
 
     //bool _stuck = false;
-    public bool stunned = false;
-    [SerializeField]private EnemyEngine _engine;
+    //[SerializeField]private bool stunned = false;
+    private AIEngine _engine;
     void Start()
     {
-        //_target = GameObject.Find("/Player/Body").transform;
-        //_engine = GetComponent<EnemyEngine>();
+        //_target = FindObjectOfType<NetworkPlayer>().transform;
+        _engine = GetComponent<AIEngine>();
 
     }
 
@@ -55,41 +54,36 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        /*
+        
         Vector3 origin = rayOrigin.transform.position;
-        Vector3 targetPos = _target.position;
-        Vector3 dir = (targetPos - origin);
-        float distance = Vector3.Distance(targetPos, transform.position);
+      //  Vector3 targetPos = _target.position;
+       // Vector3 dir = (targetPos - origin);
+       // float distance = Vector3.Distance(targetPos, transform.position);
         int layerMask = 1 << 31;
         layerMask = ~layerMask;
         
         //Draws a raycast towards the player
-        if (Physics.Raycast(origin, dir, out RaycastHit hit, lookDistance, layerMask))
-        {
-            if (hit.transform.CompareTag("Player"))
-            {
-                _engine.agent.SetDestination(hit.transform.position);
+     //   if (Physics.Raycast(origin, dir, out RaycastHit hit, lookDistance, layerMask))
+    //    {
+     //       if (hit.transform.CompareTag("Player"))
+     //       {
+      //          _engine.agent.SetDestination(hit.transform.position);
                 //if (distance <= _engine.agent.stoppingDistance)
-                    //AttackPlayer(); isPlayerDetected = true; Debug.Log("HIT THE GODDAMN PLAYER :D");
-            }
-            //else isPlayerDetected = false;
+                    //AttackPlayer(); isPlayerDetected = true; Debug.Log("Hit the player!");
+     //       }
+    //        else isPlayerDetected = false;
 
-        }
+       // }
 
-        Debug.DrawRay(origin, dir * hit.distance, Color.red);
+    //    Debug.DrawRay(origin, dir * hit.distance, Color.red);
         
         //Sets the enemy to roam around randomly when player is not hit by the raycast
-        if(true)
+        if(!isPlayerDetected)
         {
             if (_engine.agent.remainingDistance <= _engine.agent.stoppingDistance)
             {
                 RandomRoam();
             }
-        }
-        */
-        if (_engine.agent.remainingDistance <= _engine.agent.stoppingDistance)
-        {
-            RandomRoam();
         }
     }
 

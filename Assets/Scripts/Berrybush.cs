@@ -15,16 +15,16 @@ public class Berrybush : NetworkBehaviour
     [Header("Berries")]
     [SerializeField] private int berryAmount = 5;
     [SerializeField] private GameObject berries;
-    [SerializeField] private float LerpScaleDuration = 2;
+    [SerializeField] private float LerpScaleDurationHarvest = 0.5f;
+    [SerializeField] private float LerpScaleDurationRegrow = 0.5f;
 
     private float regrowTimeRemaining;
 
     private Vector3 berriesScale;
-    Vector3 endValue = new Vector3(0, 0, 0);
+    private Vector3 berriesScaleZero = new Vector3(0, 0, 0);
 
     private void Start()
     {
-        harvestable = true;
         berriesScale = berries.transform.localScale;
     }
 
@@ -38,13 +38,13 @@ public class Berrybush : NetworkBehaviour
             regrowTimeRemaining = (regrowTimeSeconds + (regrowTimeMinutes * 60)) * (1 + Random.Range(-randomMultiplierAmount, randomMultiplierAmount));
             Debug.Log("Cooldown: " + regrowTimeRemaining);
 
-            RpcHarvest();
-            //RpcScaleBerriesLerp(berriesScale, endValue);
-
+            RpcHarvest(regrowTimeRemaining);
             //playerStats.Berries += berryAmount;
             harvestable = false;
         }
     }
+
+
 
     [Command(requiresAuthority = false)]
     private void CmdRegrow()
@@ -61,19 +61,23 @@ public class Berrybush : NetworkBehaviour
     private void HandleHarvestableUpdated(bool oldValue, bool newValue)
     {
         harvestable = newValue;
+        Debug.Log(harvestable);
     }
 
     [ClientRpc]
-    private void RpcHarvest()
+    private void RpcHarvest(float regrowTime)
     {
-        StartCoroutine(HarvestCooldown(regrowTimeRemaining));
+        StartCoroutine(HarvestCooldown(regrowTime));
+        StartCoroutine(ScaleBerries(berriesScale, berriesScaleZero, LerpScaleDurationHarvest));
+       // berries.SetActive(false);
     }
 
     [ClientRpc]
     private void RpcRegrow()
     {
-        //RpcScaleBerriesLerp(endValue, berriesScale);
-        berries.SetActive(true);
+        //RpcScaleBerriesLerp(berriesScaleZero, berriesScale);
+        //berries.SetActive(true);
+        StartCoroutine(ScaleBerries(berriesScaleZero, berriesScale, LerpScaleDurationRegrow));
     }
 
     private void Update()
@@ -91,28 +95,18 @@ public class Berrybush : NetworkBehaviour
         CmdRegrow();
     }
 
-
-    private void RpcScaleBerriesLerp(Vector3 startValue, Vector3 endValue)
-    {
-        StartCoroutine(ScaleBerriesLerp(startValue, endValue));
-    }
-
-    private IEnumerator ScaleBerriesLerp(Vector3 startValue, Vector3 endValue)
+    private IEnumerator ScaleBerries(Vector3 startValue, Vector3 endValue, float LerpDuration)
     {
         float timeElapsed = 0;
-        while (timeElapsed < LerpScaleDuration)
+        while (timeElapsed < LerpDuration)
         {
 
-            berriesScale.x = Mathf.Lerp(startValue.x, endValue.x, timeElapsed / LerpScaleDuration);
-            berriesScale.y = Mathf.Lerp(startValue.y, endValue.y, timeElapsed / LerpScaleDuration);
-            berriesScale.z = Mathf.Lerp(startValue.z, endValue.z, timeElapsed / LerpScaleDuration);
+            berries.transform.localScale = Vector3.Lerp(startValue, endValue, timeElapsed / LerpDuration);
             timeElapsed += Time.deltaTime;
 
             yield return null;
         }
-        berriesScale.x = endValue.x;
-        berriesScale.y = endValue.y;
-        berriesScale.z = endValue.z;
+        berries.transform.localScale = endValue;
         
 
     }

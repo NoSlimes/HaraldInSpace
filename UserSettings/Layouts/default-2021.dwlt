@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,15 +39,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 318
+    x: 341
     y: 0
-    width: 101
+    width: 109
     height: 617
   m_MinSize: {x: 32, y: 32}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 31}
+  m_ActualView: {fileID: 32}
   m_Panes:
-  - {fileID: 31}
+  - {fileID: 32}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &3
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 36
+  controlID: 103
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,12 +165,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1329
+    width: 1430
     height: 939
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 42
+  controlID: 19
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,12 +191,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1329
+    width: 1430
     height: 617
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 20
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,14 +214,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 318
+    width: 341
     height: 617
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 19}
   - {fileID: 20}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &10
@@ -234,25 +234,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 419
+    x: 450
     y: 0
-    width: 910
+    width: 980
     height: 617
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 21}
   - {fileID: 22}
   - {fileID: 23}
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 24}
+  - {fileID: 18}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,12 +273,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 617
-    width: 1329
+    width: 1430
     height: 322
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 101
+  controlID: 198
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,13 +296,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 191
+    width: 205
     height: 322
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 24}
+  m_ActualView: {fileID: 25}
   m_Panes:
-  - {fileID: 24}
+  - {fileID: 25}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &13
@@ -315,24 +315,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 191
+    x: 205
     y: 0
-    width: 884
+    width: 951
     height: 322
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 25}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 27}
   m_Panes:
-  - {fileID: 25}
   - {fileID: 26}
+  - {fileID: 27}
+  - {fileID: 17}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -348,16 +349,16 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1075
+    x: 1156
     y: 0
-    width: 254
+    width: 274
     height: 322
   m_MinSize: {x: 300, y: 360}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 27}
+  m_ActualView: {fileID: 28}
   m_Panes:
-  - {fileID: 27}
   - {fileID: 28}
+  - {fileID: 29}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &15
@@ -375,20 +376,197 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1329
+    x: 1430
     y: 0
-    width: 591
+    width: 490
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 29}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 30}
   m_Panes:
-  - {fileID: 29}
   - {fileID: 30}
-  - {fileID: 18}
+  - {fileID: 31}
+  - {fileID: 19}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12373, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Audio Mixer
+    m_Image: {fileID: 2344599766593239149, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 205
+    y: 690
+    width: 949
+    height: 301
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_MixersTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 40520
+    m_ExpandedIDs: 12eb343c
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_LayoutStripsOnTop:
+    m_VerticalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 65
+      - 35
+      relativeSizes:
+      - 0.65
+      - 0.35000002
+      minSizes:
+      - 85
+      - 105
+      maxSizes:
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+    m_HorizontalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 60
+      - 60
+      - 60
+      - 60
+      relativeSizes:
+      - 0.25
+      - 0.25
+      - 0.25
+      - 0.25
+      minSizes:
+      - 85
+      - 85
+      - 85
+      - 85
+      maxSizes:
+      - 0
+      - 0
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+  m_LayoutStripsOnRight:
+    m_VerticalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 60
+      - 60
+      - 60
+      - 60
+      relativeSizes:
+      - 0.25
+      - 0.25
+      - 0.25
+      - 0.25
+      minSizes:
+      - 100
+      - 85
+      - 85
+      - 85
+      maxSizes:
+      - 0
+      - 0
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+    m_HorizontalSplitter:
+      ID: 207
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 285
+      - 664
+      relativeSizes:
+      - 0.3
+      - 0.7
+      minSizes:
+      - 160
+      - 160
+      maxSizes:
+      - 0
+      - 0
+      lastTotalSize: 949
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+  m_SectionOrder: 00000000030000000100000002000000
+  m_LayoutMode: 1
+  m_SortGroupsAlphabetically: 0
+  m_ShowReferencedBuses: 1
+  m_ShowBusConnections: 0
+  m_ShowBusConnectionsOfSelection: 0
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -409,9 +587,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 191
+    x: 205
     y: 690
-    width: 882
+    width: 949
     height: 301
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -419,8 +597,8 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -24300
---- !u!114 &17
+  m_LastSelectedObjectID: 28696
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,15 +619,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 419
+    x: 450
     y: 73
-    width: 908
+    width: 978
     height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,15 +648,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1329
+    x: 1430
     y: 73
-    width: 590
+    width: 489
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -501,7 +679,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 317
+    width: 340
     height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -510,9 +688,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 3ea9feffd6b1feffdeb1feffd2cefeff3601ffff0202fffff22cffffea3afffff63affff14a1ffff30c8ffff3cf4ffff48f6ffff14fbffff367d00005c86000070ad0000caad0000
+      m_SelectedIDs: 18700000
+      m_LastClickedID: 28696
+      m_ExpandedIDs: 5cf9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -536,7 +714,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -576,1942 +754,9 @@ MonoBehaviour:
     _unsavedChangesAction: 0
     _paletteManager:
       _paletteData:
-      - _brushes:
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000202243490
-          _name: Bush_1
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: e7d1ae41215a33b469abb08c579e97b6
-            _prefabPath: Assets/Prefabs/City/Bush_1.prefab
-            _frequency: 1
-            _parentId: 638026000202243490
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000204921865
-          _name: Bush_2
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 6c00ef313ec59cc4895790f215523f4f
-            _prefabPath: Assets/Prefabs/City/Bush_2.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: e7d1ae41215a33b469abb08c579e97b6
-            _prefabPath: Assets/Prefabs/City/Bush_1.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: b219bf0f1ed0c9c4c91f8282901e4e8f
-            _prefabPath: Assets/Prefabs/City/Bush_3.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 5a4f1f53366d4f24385bb7fdba551b09
-            _prefabPath: Assets/Prefabs/City/Bush_4.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000206345698
-          _name: Bush_3
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: b219bf0f1ed0c9c4c91f8282901e4e8f
-            _prefabPath: Assets/Prefabs/City/Bush_3.prefab
-            _frequency: 1
-            _parentId: 638026000206345698
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000208299670
-          _name: Bush_4
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 5a4f1f53366d4f24385bb7fdba551b09
-            _prefabPath: Assets/Prefabs/City/Bush_4.prefab
-            _frequency: 1
-            _parentId: 638026000208299670
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000209658662
-          _name: Fountain
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 83550b04b8902a346b4db44c87f09a2b
-            _prefabPath: Assets/Prefabs/City/Fountain.prefab
-            _frequency: 1
-            _parentId: 638026000209658662
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000211027639
-          _name: Gas Station
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 79152c1fcfc70f3428314921af7473be
-            _prefabPath: Assets/Prefabs/City/Gas Station.prefab
-            _frequency: 1
-            _parentId: 638026000211027639
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000212366823
-          _name: House_Distance_1
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 460dd299d4564e54ea8f184428788b52
-            _prefabPath: Assets/Prefabs/City/House_Distance_1.prefab
-            _frequency: 1
-            _parentId: 638026000212366823
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000213825055
-          _name: House_Distance_2
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: d6c17334610104f4aa1b1cf35008f7c0
-            _prefabPath: Assets/Prefabs/City/House_Distance_2.prefab
-            _frequency: 1
-            _parentId: 638026000213825055
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000215908257
-          _name: House_distance_3
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: acb6722d255e73f4a95346df96e25645
-            _prefabPath: Assets/Prefabs/City/House_distance_3.prefab
-            _frequency: 1
-            _parentId: 638026000215908257
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000217356591
-          _name: Streetlight
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 5d6598ad314d4a8468602db7128cf756
-            _prefabPath: Assets/Prefabs/City/Streetlight.prefab
-            _frequency: 1
-            _parentId: 638026000217356591
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000220327607
-          _name: Tree
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 0781686da1f293749bab2052cc4dbca5
-            _prefabPath: Assets/Prefabs/City/Tree.prefab
-            _frequency: 1
-            _parentId: 638026000220327607
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: f5f623648c47bdf418024abea69474cf
-            _prefabPath: Assets/Prefabs/City/Tree_2.prefab
-            _frequency: 1
-            _parentId: 638026000220327607
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 540f75084edd61f4e98e719a69e739f6
-            _prefabPath: Assets/Prefabs/City/Tree_4.prefab
-            _frequency: 1
-            _parentId: 638026000220327607
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000221795767
-          _name: Tree_2
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: f5f623648c47bdf418024abea69474cf
-            _prefabPath: Assets/Prefabs/City/Tree_2.prefab
-            _frequency: 1
-            _parentId: 638026000221795767
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000224117055
-          _name: Tree_3
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 540f75084edd61f4e98e719a69e739f6
-            _prefabPath: Assets/Prefabs/City/Tree_4.prefab
-            _frequency: 1
-            _parentId: 638026000224117055
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000225853042
-          _name: Wall-light
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: b6d841923eee22d46911cd480d862129
-            _prefabPath: Assets/Prefabs/City/Wall-light.prefab
-            _frequency: 1
-            _parentId: 638026000225853042
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
+      - _brushes: []
         _name: Palette
-        _id: -8585346110427975629
+        _id: -8585345062880260392
         _brushCreationSettings:
           _includeSubfolders: 1
           _createLablesForEachDroppedFolder: 0
@@ -2579,7 +824,7 @@ MonoBehaviour:
             _targetEuler: {x: 0, y: 125, z: 0}
             _targetOffset: {x: 0, y: 0}
       _selectedPaletteIdx: 0
-      _selectedBrushIdx: 10
+      _selectedBrushIdx: -1
       _showBrushName: 0
       _viewList: 0
     pinManager:
@@ -2952,7 +1197,7 @@ MonoBehaviour:
           _min: 0
           _max: 60
         _terrainLayerIds: []
-        _showPreview: 1
+        _showPreview: 0
     _gravityToolManager:
       _profileKeys:
       - Default
@@ -4132,7 +2377,7 @@ MonoBehaviour:
           z: 0
         _lockedGrid: 0
         _step: {x: 1, y: 1, z: 1}
-        _origin: {x: 0, y: 0.00000011920929, z: 0}
+        _origin: {x: 0, y: 0, z: 0}
         _rotation: {x: 0, y: 0, z: 0, w: 1}
         _showPositionHandle: 1
         _showRotationHandle: 0
@@ -4144,7 +2389,7 @@ MonoBehaviour:
         _snapToCircunference: 1
         _majorLinesGap: {x: 10, y: 10, z: 10}
   _selection: 00000000
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4165,9 +2410,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 419
+    x: 450
     y: 73
-    width: 908
+    width: 978
     height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -4403,9 +2648,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -74.5478, y: 6.74509, z: -105.34604}
+    m_Target: {x: -5.6551266, y: 40.334126, z: -88.00509}
     speed: 2
-    m_Value: {x: -74.5478, y: 6.74509, z: -105.34604}
+    m_Value: {x: -5.6551266, y: 40.334126, z: -88.00509}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -4452,9 +2697,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.11691848, y: -0.6703677, z: 0.10808386, w: -0.7247839}
+    m_Target: {x: -0.28763324, y: -0.30444247, z: 0.09704937, w: -0.9029747}
     speed: 2
-    m_Value: {x: -0.11675292, y: -0.6714352, z: 0.10825606, w: -0.7237571}
+    m_Value: {x: -0.28760448, y: -0.304412, z: 0.09703966, w: -0.9028844}
   m_Size:
     m_Target: 1.5107036
     speed: 2
@@ -4483,7 +2728,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &22
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4504,9 +2749,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 419
+    x: 450
     y: 73
-    width: 908
+    width: 978
     height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -4545,7 +2790,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -4554,29 +2799,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 908
+      width: 978
       height: 575
-    m_Scale: {x: 0.47291666, y: 0.47291666}
-    m_Translation: {x: 454, y: 287.5}
+    m_Scale: {x: 0.509375, y: 0.509375}
+    m_Translation: {x: 489, y: 287.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -960
-      y: -607.9295
-      width: 1920
-      height: 1215.859
+      x: -960.00006
+      y: -564.4172
+      width: 1920.0001
+      height: 1128.8344
     m_MinimalGUI: 1
-  m_defaultScale: 0.47291666
-  m_LastWindowPixelSize: {x: 908, y: 596}
+  m_defaultScale: 0.509375
+  m_LastWindowPixelSize: {x: 978, y: 596}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &23
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4597,9 +2842,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 419
+    x: 450
     y: 73
-    width: 908
+    width: 651
     height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -4647,11 +2892,11 @@ MonoBehaviour:
     - e00: 1.0578178
       e01: 0
       e02: 0
-      e03: -237.57156
+      e03: -237.57153
       e10: 0
       e11: 1.0578178
       e12: 0
-      e13: 204.5908
+      e13: 204.59082
       e20: 0
       e21: 0
       e22: 1
@@ -4660,14 +2905,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.56631577
+    - e00: 1.2812473
       e01: 0
       e02: 0
-      e03: -13.315765
+      e03: -341.55054
       e10: 0
-      e11: 0.56631577
+      e11: 1.2812473
       e12: 0
-      e13: 224.7
+      e13: 165.97545
       e20: 0
       e21: 0
       e22: 1
@@ -4694,7 +2939,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &24
+--- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4716,7 +2961,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 690
-    width: 190
+    width: 204
     height: 301
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -5552,7 +3797,7 @@ MonoBehaviour:
             _targetEuler: {x: 0, y: 125, z: 0}
             _targetOffset: {x: 0, y: 0}
     _sceneItems: []
---- !u!114 &25
+--- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5573,9 +3818,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 191
+    x: 205
     y: 690
-    width: 882
+    width: 949
     height: 301
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -5594,22 +3839,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Labyrinth
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 69
   m_LastFolders:
-  - Assets/Prefabs/Labyrinth
-  m_LastFoldersGridSize: -1
+  - Assets/Scripts
+  m_LastFoldersGridSize: 69
   m_LastProjectPath: C:\Users\Elias Wennerberg\OneDrive\Stoff\Unity\HaraldInSpace
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 135}
-    m_SelectedIDs: e6740000
-    m_LastClickedID: 29926
-    m_ExpandedIDs: 00000000387300003a7300003c7300003e7300004073000000ca9a3b
+    scrollPos: {x: 0, y: 87}
+    m_SelectedIDs: 86750000
+    m_LastClickedID: 30086
+    m_ExpandedIDs: 00000000487500004a7500004c7500004e7500005075000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5637,7 +3882,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000387300003a7300003c7300003e73000040730000
+    m_ExpandedIDs: 00000000487500004a7500004c7500004e75000050750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5662,10 +3907,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 18700000
+    m_LastClickedInstanceID: 28696
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300002ace0000c4d00000c0d00000bcd000008a2f000068710000
+    m_ExpandedInstanceIDs: c62300002ace0000c4d00000c0d00000bcd000008a2f000068710000dc790000489e00003a7c000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5690,10 +3935,10 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 69
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &26
+--- !u!114 &27
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5714,15 +3959,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 191
+    x: 205
     y: 690
-    width: 882
+    width: 949
     height: 301
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &27
+--- !u!114 &28
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5743,15 +3988,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1075
+    x: 1156
     y: 690
-    width: 252
+    width: 272
     height: 301
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &28
+--- !u!114 &29
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5791,1942 +4036,9 @@ MonoBehaviour:
     _unsavedChangesAction: 0
     _paletteManager:
       _paletteData:
-      - _brushes:
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000202243490
-          _name: Bush_1
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: e7d1ae41215a33b469abb08c579e97b6
-            _prefabPath: Assets/Prefabs/City/Bush_1.prefab
-            _frequency: 1
-            _parentId: 638026000202243490
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000204921865
-          _name: Bush_2
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 6c00ef313ec59cc4895790f215523f4f
-            _prefabPath: Assets/Prefabs/City/Bush_2.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: e7d1ae41215a33b469abb08c579e97b6
-            _prefabPath: Assets/Prefabs/City/Bush_1.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: b219bf0f1ed0c9c4c91f8282901e4e8f
-            _prefabPath: Assets/Prefabs/City/Bush_3.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 5a4f1f53366d4f24385bb7fdba551b09
-            _prefabPath: Assets/Prefabs/City/Bush_4.prefab
-            _frequency: 1
-            _parentId: 638026000204921865
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000206345698
-          _name: Bush_3
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: b219bf0f1ed0c9c4c91f8282901e4e8f
-            _prefabPath: Assets/Prefabs/City/Bush_3.prefab
-            _frequency: 1
-            _parentId: 638026000206345698
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000208299670
-          _name: Bush_4
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 5a4f1f53366d4f24385bb7fdba551b09
-            _prefabPath: Assets/Prefabs/City/Bush_4.prefab
-            _frequency: 1
-            _parentId: 638026000208299670
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000209658662
-          _name: Fountain
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 83550b04b8902a346b4db44c87f09a2b
-            _prefabPath: Assets/Prefabs/City/Fountain.prefab
-            _frequency: 1
-            _parentId: 638026000209658662
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000211027639
-          _name: Gas Station
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 79152c1fcfc70f3428314921af7473be
-            _prefabPath: Assets/Prefabs/City/Gas Station.prefab
-            _frequency: 1
-            _parentId: 638026000211027639
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000212366823
-          _name: House_Distance_1
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 460dd299d4564e54ea8f184428788b52
-            _prefabPath: Assets/Prefabs/City/House_Distance_1.prefab
-            _frequency: 1
-            _parentId: 638026000212366823
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000213825055
-          _name: House_Distance_2
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: d6c17334610104f4aa1b1cf35008f7c0
-            _prefabPath: Assets/Prefabs/City/House_Distance_2.prefab
-            _frequency: 1
-            _parentId: 638026000213825055
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000215908257
-          _name: House_distance_3
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: acb6722d255e73f4a95346df96e25645
-            _prefabPath: Assets/Prefabs/City/House_distance_3.prefab
-            _frequency: 1
-            _parentId: 638026000215908257
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000217356591
-          _name: Streetlight
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 5d6598ad314d4a8468602db7128cf756
-            _prefabPath: Assets/Prefabs/City/Streetlight.prefab
-            _frequency: 1
-            _parentId: 638026000217356591
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000220327607
-          _name: Tree
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 0781686da1f293749bab2052cc4dbca5
-            _prefabPath: Assets/Prefabs/City/Tree.prefab
-            _frequency: 1
-            _parentId: 638026000220327607
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: f5f623648c47bdf418024abea69474cf
-            _prefabPath: Assets/Prefabs/City/Tree_2.prefab
-            _frequency: 1
-            _parentId: 638026000220327607
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 540f75084edd61f4e98e719a69e739f6
-            _prefabPath: Assets/Prefabs/City/Tree_4.prefab
-            _frequency: 1
-            _parentId: 638026000220327607
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000221795767
-          _name: Tree_2
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: f5f623648c47bdf418024abea69474cf
-            _prefabPath: Assets/Prefabs/City/Tree_2.prefab
-            _frequency: 1
-            _parentId: 638026000221795767
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000224117055
-          _name: Tree_3
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: 540f75084edd61f4e98e719a69e739f6
-            _prefabPath: Assets/Prefabs/City/Tree_4.prefab
-            _frequency: 1
-            _parentId: 638026000224117055
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
-        - _surfaceDistance: 0
-          _embedInSurface: 0
-          _embedAtPivotHeight: 1
-          _localPositionOffset: {x: 0, y: 0, z: 0}
-          _rotateToTheSurface: 1
-          _eulerOffset: {x: 0, y: 0, z: 0}
-          _addRandomRotation: 0
-          _rotationFactor: 90
-          _rotateInMultiples: 0
-          _randomEulerOffset:
-            x:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            y:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-            z:
-              _v1: 0
-              _v2: 0
-              _min: 0
-              _max: 0
-          _separateScaleAxes: 0
-          _scaleMultiplier: {x: 1, y: 1, z: 1}
-          _randomScaleMultiplier: 0
-          _randomScaleMultiplierRange:
-            x:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            y:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-            z:
-              _v1: 1
-              _v2: 1
-              _min: 1
-              _max: 1
-          _thumbnailSettings:
-            _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-            _lightEuler: {x: 130, y: -165}
-            _lightColor: {r: 1, g: 1, b: 1, a: 1}
-            _lightIntensity: 1
-            _zoom: 1
-            _targetEuler: {x: 0, y: 125, z: 0}
-            _targetOffset: {x: 0, y: 0}
-          _id: 638026000225853042
-          _name: Wall-light
-          _items:
-          - _surfaceDistance: 0
-            _embedInSurface: 0
-            _embedAtPivotHeight: 1
-            _localPositionOffset: {x: 0, y: 0, z: 0}
-            _rotateToTheSurface: 1
-            _eulerOffset: {x: 0, y: 0, z: 0}
-            _addRandomRotation: 0
-            _rotationFactor: 90
-            _rotateInMultiples: 0
-            _randomEulerOffset:
-              x:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              y:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-              z:
-                _v1: 0
-                _v2: 0
-                _min: 0
-                _max: 0
-            _separateScaleAxes: 0
-            _scaleMultiplier: {x: 1, y: 1, z: 1}
-            _randomScaleMultiplier: 0
-            _randomScaleMultiplierRange:
-              x:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              y:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-              z:
-                _v1: 1
-                _v2: 1
-                _min: 1
-                _max: 1
-            _thumbnailSettings:
-              _backgroudColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-              _lightEuler: {x: 130, y: -165}
-              _lightColor: {r: 1, g: 1, b: 1, a: 1}
-              _lightIntensity: 1
-              _zoom: 1
-              _targetEuler: {x: 0, y: 125, z: 0}
-              _targetOffset: {x: 0, y: 0}
-            _overwriteSettings: 0
-            _guid: b6d841923eee22d46911cd480d862129
-            _prefabPath: Assets/Prefabs/City/Wall-light.prefab
-            _frequency: 1
-            _parentId: 638026000225853042
-            _overwriteThumbnailSettings: 0
-            _includeInThumbnail: 1
-          _frequencyMode: 0
-          _pattern: 1...
-          _restartPatternForEachStroke: 1
+      - _brushes: []
         _name: Palette
-        _id: -8585346110427975629
+        _id: -8585345062880260392
         _brushCreationSettings:
           _includeSubfolders: 1
           _createLablesForEachDroppedFolder: 0
@@ -7794,7 +4106,7 @@ MonoBehaviour:
             _targetEuler: {x: 0, y: 125, z: 0}
             _targetOffset: {x: 0, y: 0}
       _selectedPaletteIdx: 0
-      _selectedBrushIdx: 10
+      _selectedBrushIdx: -1
       _showBrushName: 0
       _viewList: 0
     pinManager:
@@ -8167,7 +4479,7 @@ MonoBehaviour:
           _min: 0
           _max: 60
         _terrainLayerIds: []
-        _showPreview: 1
+        _showPreview: 0
     _gravityToolManager:
       _profileKeys:
       - Default
@@ -9347,7 +5659,7 @@ MonoBehaviour:
           z: 0
         _lockedGrid: 0
         _step: {x: 1, y: 1, z: 1}
-        _origin: {x: 0, y: 0.00000011920929, z: 0}
+        _origin: {x: 0, y: 0, z: 0}
         _rotation: {x: 0, y: 0, z: 0, w: 1}
         _showPositionHandle: 1
         _showRotationHandle: 0
@@ -9358,7 +5670,7 @@ MonoBehaviour:
         _snapToRadius: 1
         _snapToCircunference: 1
         _majorLinesGap: {x: 10, y: 10, z: 10}
---- !u!114 &29
+--- !u!114 &30
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9379,9 +5691,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1329
+    x: 1430
     y: 73
-    width: 590
+    width: 489
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -9400,7 +5712,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &30
+--- !u!114 &31
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9421,23 +5733,23 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1329
+    x: 1430
     y: 73
-    width: 590
+    width: 489
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 159}
   m_Scope: 1
   m_SplitterFlex: 0.2
   m_SearchText: 
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 272fd499
-    m_LastClickedID: -1714147545
+    m_SelectedIDs: 4dcf9b58
+    m_LastClickedID: 1486606157
     m_ExpandedIDs: a01a5fa653336be200000000c53aba5a
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -9456,7 +5768,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
---- !u!114 &31
+--- !u!114 &32
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9476,9 +5788,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 318
+    x: 341
     y: 73
-    width: 99
+    width: 107
     height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:

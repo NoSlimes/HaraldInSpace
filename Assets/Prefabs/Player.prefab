@@ -362,6 +362,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f6eeace1d58df4fa352e02946c1aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  HP: 10
+  Stamina: 20
+  Berries: 10
+  SpeedMultiplier: 1
 --- !u!114 &1180915728472828897
 MonoBehaviour:
   m_ObjectHideFlags: 0

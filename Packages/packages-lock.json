@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.mirror.steamworks.net": {
+      "version": "https://github.com/Chykary/FizzySteamworks.git?path=/com.mirror.steamworks.net",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "63f94f59660ca1f3f16111e5cac9207a31f7ca21"
+    },
     "com.unity.ai.navigation": {
       "version": "1.0.0-exp.4",
       "depth": 0,

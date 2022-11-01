@@ -18,8 +18,6 @@ public class ThrowBerries : NetworkBehaviour
 
     void Update()
     {
-
-        Debug.Log("islocalplayer" + isLocalPlayer);
         if(!hasAuthority) { return; }
 
         if (Input.GetButtonDown("Fire1"))

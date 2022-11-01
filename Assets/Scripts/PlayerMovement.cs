@@ -5,7 +5,8 @@ using UnityEngine;
 using Mirror;
 
 public class PlayerMovement : NetworkBehaviour
-{ 
+{
+    [Header("Movement")]
     [SerializeField] private float sprintSpeed = 2000;
     [SerializeField] private float jumpStrength = 10000;
     [SerializeField] private float walkSpeed = 1000;
@@ -15,29 +16,39 @@ public class PlayerMovement : NetworkBehaviour
     private Rigidbody playerBody;
     private Camera Camera;
     private Animator animator;
+    private CapsuleCollider capsuleCollider;
 
     private float speed = 0;
     private PlayerStats playerStats;
 
-   [SerializeField] bool isGrounded; 
-    
+    [Header("Ground Checking")]
+    [SerializeField] private LayerMask groundMask;
+
+
+
     void Start()
     {
         speed = walkSpeed;
         animator = GetComponentInChildren<Animator>();
         playerBody = GetComponent<Rigidbody>();
         playerStats = GetComponent<PlayerStats>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
+
     }
+
+    private bool isGrounded()
+    {
+        float radius = capsuleCollider.radius * 0.9f;
+        Vector3 pos = transform.position + Vector3.up * (radius * 0.9f);
+        return Physics.CheckSphere(pos, radius, groundMask);
+    }
+
 
     public void AssignCamera()
     {
         Camera = GetComponentInChildren<Camera>();
     }
 
-    private void OnCollisionStay(Collision collision)
-    {
-        isGrounded = true;
-    }
 
     private void HandleMovement()
     {
@@ -50,10 +61,10 @@ public class PlayerMovement : NetworkBehaviour
             playerBody.AddRelativeForce(Vector3.right * (speed * x) * Time.deltaTime);
             playerBody.AddRelativeForce(Vector3.forward * (speed * z) * Time.deltaTime);
 
-            if (Input.GetButtonDown("Jump") && isGrounded)
+            if (Input.GetButtonDown("Jump") && isGrounded())
             {
                 playerBody.AddForce(Vector3.up * jumpStrength * Time.deltaTime);
-                isGrounded = false;
+                Debug.Log(isGrounded());
             }
 
             if (Input.GetButton("Sprint"))

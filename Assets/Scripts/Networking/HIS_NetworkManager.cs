@@ -1,10 +1,14 @@
 using Mirror;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class HIS_NetworkManager : NetworkManager
 {
+    public static HIS_NetworkManager instance;
+    public override void Start()
+    {
+        base.Start();
+
+        instance = this;
+    }
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
         base.OnServerAddPlayer(conn);
@@ -15,4 +19,11 @@ public class HIS_NetworkManager : NetworkManager
 
         GameManager.instance.players.Add(player.gameObject);
     }
+
+    public override void ServerChangeScene(string newSceneName)
+    {
+        base.ServerChangeScene(newSceneName);
+
+    }
+
 }

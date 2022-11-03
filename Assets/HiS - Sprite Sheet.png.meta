@@ -1,0 +1,704 @@
+fileFormatVersion: 2
+guid: 80b75035b04888b40a4050f4fb9a43b4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MenuButton_Deselected
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 1776
+        width: 293
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35af34235163364c891118ce915dfeb
+      internalID: -1990484659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayButton_Deselected
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1657
+        width: 671
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca31dd225ba691a41b9c972b29455246
+      internalID: -1252176154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayButton_Hover
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1657
+        width: 672
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fafe260d88a6a543aa99acb6d3af1ed
+      internalID: -627815630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayButton_Selected
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1657
+        width: 671
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6c93062e02a9b4b965eb6c1feaa96e
+      internalID: -1166003738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButton_Hover
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 1508
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c666828f89965e449123a83ac4e882e
+      internalID: -1727472283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButton_Selected
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 1506
+        width: 193
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e37020642924f041b7ad58046c2d051
+      internalID: 2067263514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveButton_Deselected
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1418
+        width: 671
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b491c8d04041845840772a764be550
+      internalID: 1757671259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveButton_Hover
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1418
+        width: 672
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b246e279d386e1642a4a2b64482faa19
+      internalID: 702742700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaveButton_Selected
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1417
+        width: 672
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8e7a840eddf55448335982a0c20221
+      internalID: -220452340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SettingsButton_Deselcted
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1181
+        width: 671
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0019ec629720e419dbc473f0d31ff6
+      internalID: -1711537826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SettingsButton_Hover
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1181
+        width: 672
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fd65e279b151b4f9e665aae28fd2a6
+      internalID: 1125748531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SettingsButton_Selected
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1181
+        width: 671
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6d9af03a952374bb8beaa80e886a85
+      internalID: 1761865928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slider_Deselcted
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 1092
+        width: 160
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9b0423b2ccbc141bb66a2474cfe4a4
+      internalID: 583589121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButton_Deselcted
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 946
+        width: 671
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e20d5c3aa575734bacbf38f3b49ee46
+      internalID: 1610344474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButton_Hover
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 943
+        width: 672
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1708ec0ab9b4c0249a730a4a05168437
+      internalID: -506294325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButton_Selected
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 943
+        width: 671
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecdc1c556e78634b925fefe894a8156
+      internalID: -1360130108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slider_Hover
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 847
+        width: 101
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a2f35897a87294f8965674e4497eeb
+      internalID: 324837239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slider_Selected
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 847
+        width: 99
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943a6ba49e22a6d48b8bcefbde280fdc
+      internalID: -962430359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 05cbb4c2474577d4e8c4573ccd30f279
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HiS - Sprite Sheet_202: 295481048
+      HiS - Sprite Sheet_157: 1960899042
+      HiS - Sprite Sheet_15: 1080061843
+      HiS - Sprite Sheet_131: 1871388243
+      HiS - Sprite Sheet_142: 1352383960
+      HiS - Sprite Sheet_95: 217353921
+      HiS - Sprite Sheet_162: 1066542577
+      MenuButton_Deselected: -1990484659
+      HiS - Sprite Sheet_177: -921866122
+      HiS - Sprite Sheet_71: -364826684
+      HiS - Sprite Sheet_143: -717428296
+      ExitButton_Hover: -506294325
+      HiS - Sprite Sheet_64: -1613645256
+      HiS - Sprite Sheet_106: -616228131
+      HiS - Sprite Sheet_158: -1861570895
+      MenuButton_Selected: 2067263514
+      HiS - Sprite Sheet_28: 1940410043
+      HiS - Sprite Sheet_201: 2098602916
+      HiS - Sprite Sheet_171: 1359715121
+      HiS - Sprite Sheet_13: 883399940
+      HiS - Sprite Sheet_100: -916207542
+      HiS - Sprite Sheet_78: 528404409
+      HiS - Sprite Sheet_164: 2004149373
+      HiS - Sprite Sheet_165: -2072375876
+      HiS - Sprite Sheet_167: 1310621365
+      HiS - Sprite Sheet_109: -584551796
+      HiS - Sprite Sheet_174: -1896818985
+      HiS - Sprite Sheet_32: -577009453
+      HiS - Sprite Sheet_200: 1183319766
+      HiS - Sprite Sheet_37: 1087956289
+      HiS - Sprite Sheet_86: -1048976516
+      HiS - Sprite Sheet_79: -1276321099
+      HiS - Sprite Sheet_101: 1035809226
+      HiS - Sprite Sheet_67: 265797268
+      HiS - Sprite Sheet_20: -1655321284
+      HiS - Sprite Sheet_122: 596595721
+      HiS - Sprite Sheet_80: 740118445
+      HiS - Sprite Sheet_150: -299621131
+      HiS - Sprite Sheet_63: -303854322
+      HiS - Sprite Sheet_114: 1876445935
+      HiS - Sprite Sheet_154: -699603433
+      HiS - Sprite Sheet_166: -1611287282
+      HiS - Sprite Sheet_195: -1870957010
+      HiS - Sprite Sheet_159: -540694203
+      HiS - Sprite Sheet_22: 1501528775
+      HiS - Sprite Sheet_137: -216791954
+      HiS - Sprite Sheet_43: 685985679
+      HiS - Sprite Sheet_148: 228800765
+      HiS - Sprite Sheet_185: -1020945123
+      HiS - Sprite Sheet_168: -49145747
+      HiS - Sprite Sheet_61: 1803130375
+      HiS - Sprite Sheet_102: -993984032
+      HiS - Sprite Sheet_188: -1005899337
+      HiS - Sprite Sheet_96: -1839010032
+      HiS - Sprite Sheet_30: -547094249
+      HiS - Sprite Sheet_184: 938270359
+      HiS - Sprite Sheet_123: 797792068
+      HiS - Sprite Sheet_152: -1049238615
+      SaveButton_Selected: -220452340
+      HiS - Sprite Sheet_121: 1792625372
+      HiS - Sprite Sheet_129: -1673374971
+      HiS - Sprite Sheet_119: 1492962673
+      HiS - Sprite Sheet_41: 895464999
+      HiS - Sprite Sheet_36: -1618447030
+      HiS - Sprite Sheet_107: 4418352
+      HiS - Sprite Sheet_4: -37733125
+      HiS - Sprite Sheet_192: 2004906
+      SettingsButton_Selected: 1761865928
+      HiS - Sprite Sheet_170: -2140120526
+      HiS - Sprite Sheet_82: -1910371031
+      HiS - Sprite Sheet_128: -1520212864
+      HiS - Sprite Sheet_197: -150592548
+      HiS - Sprite Sheet_110: -1814053881
+      HiS - Sprite Sheet_25: -1592385067
+      HiS - Sprite Sheet_87: -880515704
+      HiS - Sprite Sheet_141: 2068392970
+      HiS - Sprite Sheet_3: 974428188
+      HiS - Sprite Sheet_153: 1133277298
+      HiS - Sprite Sheet_108: -2131353724
+      HiS - Sprite Sheet_12: 1961357382
+      HiS - Sprite Sheet_8: -1791838708
+      HiS - Sprite Sheet_77: 869909970
+      HiS - Sprite Sheet_194: 730411507
+      HiS - Sprite Sheet_186: -464042140
+      HiS - Sprite Sheet_66: -1195319170
+      HiS - Sprite Sheet_144: -1549448602
+      HiS - Sprite Sheet_125: -1979208433
+      HiS - Sprite Sheet_175: 621203460
+      HiS - Sprite Sheet_196: -224317417
+      HiS - Sprite Sheet_105: 1564903986
+      HiS - Sprite Sheet_149: -698161612
+      HiS - Sprite Sheet_134: 468693220
+      HiS - Sprite Sheet_178: -749497189
+      HiS - Sprite Sheet_92: 1952639180
+      HiS - Sprite Sheet_118: 1528580201
+      HiS - Sprite Sheet_126: 251995891
+      HiS - Sprite Sheet_182: 1376432341
+      HiS - Sprite Sheet_163: -1577911478
+      HiS - Sprite Sheet_187: -645035186
+      HiS - Sprite Sheet_23: 795731203
+      HiS - Sprite Sheet_113: 264824111
+      HiS - Sprite Sheet_93: -197129932
+      HiS - Sprite Sheet_124: 1490586434
+      HiS - Sprite Sheet_161: -529641398
+      HiS - Sprite Sheet_17: 2040215314
+      HiS - Sprite Sheet_97: -1614798238
+      HiS - Sprite Sheet_39: -408863389
+      HiS - Sprite Sheet_136: 1834455475
+      HiS - Sprite Sheet_179: -1256731490
+      HiS - Sprite Sheet_69: -1656976760
+      HiS - Sprite Sheet_60: 1671710507
+      HiS - Sprite Sheet_172: 346751417
+      HiS - Sprite Sheet_68: 175908537
+      HiS - Sprite Sheet_181: -1649739574
+      SettingsButton_Hover: 1125748531
+      HiS - Sprite Sheet_133: -588484579
+      HiS - Sprite Sheet_58: 1963691311
+      HiS - Sprite Sheet_34: 236895984
+      HiS - Sprite Sheet_183: 711841371
+      HiS - Sprite Sheet_117: 981407793
+      HiS - Sprite Sheet_140: -142809121
+      HiS - Sprite Sheet_73: 1798937269
+      HiS - Sprite Sheet_173: -1986351723
+      HiS - Sprite Sheet_11: 618467419
+      HiS - Sprite Sheet_180: 565942155
+      HiS - Sprite Sheet_145: -808682306
+      Slider_Selected: -962430359
+      HiS - Sprite Sheet_26: 295306686
+      HiS - Sprite Sheet_138: 1582762149
+      HiS - Sprite Sheet_115: -249295108
+      ExitButton_Deselcted: 1610344474
+      HiS - Sprite Sheet_99: -404550304
+      HiS - Sprite Sheet_151: -1554084586
+      HiS - Sprite Sheet_160: -1823858464
+      HiS - Sprite Sheet_116: -1972871989
+      HiS - Sprite Sheet_27: -770294311
+      HiS - Sprite Sheet_40: -2074405764
+      HiS - Sprite Sheet_16: -385232720
+      HiS - Sprite Sheet_7: -1408848647
+      HiS - Sprite Sheet_29: -1829831409
+      HiS - Sprite Sheet_42: 1931758554
+      HiS - Sprite Sheet_127: -1506103696
+      HiS - Sprite Sheet_84: 870723444
+      HiS - Sprite Sheet_19: -117005027
+      HiS - Sprite Sheet_98: 434335704
+      HiS - Sprite Sheet_147: -803583468
+      HiS - Sprite Sheet_190: -177475409
+      HiS - Sprite Sheet_189: 955732101
+      HiS - Sprite Sheet_38: -23546186
+      HiS - Sprite Sheet_1: 1077787344
+      HiS - Sprite Sheet_14: 269487050
+      HiS - Sprite Sheet_59: 906911479
+      HiS - Sprite Sheet_44: -440278894
+      HiS - Sprite Sheet_103: -1560743697
+      HiS - Sprite Sheet_90: 5747024
+      SettingsButton_Deselcted: -1711537826
+      HiS - Sprite Sheet_72: -1430817041
+      HiS - Sprite Sheet_0: 1792909807
+      HiS - Sprite Sheet_10: 348318914
+      HiS - Sprite Sheet_18: -1869424706
+      Slider_Deselcted: 583589121
+      HiS - Sprite Sheet_9: 1268678760
+      HiS - Sprite Sheet_83: -1260759771
+      HiS - Sprite Sheet_199: -1656138687
+      HiS - Sprite Sheet_139: -2097828814
+      Slider_Hover: 324837239
+      HiS - Sprite Sheet_169: -860041565
+      SaveButton_Hover: 702742700
+      PlayButton_Selected: -1166003738
+      HiS - Sprite Sheet_91: -2063170132
+      HiS - Sprite Sheet_21: 1560846327
+      HiS - Sprite Sheet_33: 938411204
+      HiS - Sprite Sheet_198: 921573826
+      HiS - Sprite Sheet_104: -721486493
+      HiS - Sprite Sheet_5: -1928001037
+      HiS - Sprite Sheet_191: 417800593
+      HiS - Sprite Sheet_155: -1314544229
+      ExitButton_Selected: -1360130108
+      HiS - Sprite Sheet_70: 628127878
+      HiS - Sprite Sheet_35: -585649788
+      HiS - Sprite Sheet_111: -2089621924
+      HiS - Sprite Sheet_146: -1050965572
+      HiS - Sprite Sheet_176: -1341370607
+      SaveButton_Deselected: 1757671259
+      PlayButton_Deselected: -1252176154
+      HiS - Sprite Sheet_85: -1153844250
+      HiS - Sprite Sheet_2: -971777311
+      HiS - Sprite Sheet_65: -1511195585
+      HiS - Sprite Sheet_57: 692331933
+      HiS - Sprite Sheet_135: -862216593
+      HiS - Sprite Sheet_120: 1232849696
+      HiS - Sprite Sheet_112: 835472402
+      HiS - Sprite Sheet_130: -246331422
+      HiS - Sprite Sheet_132: 376979007
+      HiS - Sprite Sheet_6: -1003270852
+      MenuButton_Hover: -1727472283
+      HiS - Sprite Sheet_81: -1355356941
+      HiS - Sprite Sheet_31: 666516106
+      HiS - Sprite Sheet_156: 1131182557
+      HiS - Sprite Sheet_193: -1750594370
+      HiS - Sprite Sheet_62: 1061309264
+      PlayButton_Hover: -627815630
+      HiS - Sprite Sheet_94: 550203858
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

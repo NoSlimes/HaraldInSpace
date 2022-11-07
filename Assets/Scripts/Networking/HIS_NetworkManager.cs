@@ -9,6 +9,11 @@ public class HIS_NetworkManager : NetworkManager
 
         instance = this;
     }
+    public void setTransport(Transport newTransport)
+    {
+        transport = newTransport;
+    }
+
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
         base.OnServerAddPlayer(conn);
@@ -25,5 +30,4 @@ public class HIS_NetworkManager : NetworkManager
         base.ServerChangeScene(newSceneName);
 
     }
-
 }

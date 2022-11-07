@@ -13,14 +13,18 @@ public class StartHost : MonoBehaviour
         instance = this;
     }
 
-    public void HostTelepathy()
+    public IEnumerator HostTelepathy()
     {
         buttons.SetActive(false);
+        HostManager.instance.SetTelepathyTransport();
+        yield return new WaitForEndOfFrame();
         HIS_NetworkManager.instance.StartHost();
     }
 
-    public void HostSteamLobby()
+    public IEnumerator HostSteamLobby()
     {
+        HostManager.instance.SetSteamTransport();
+        yield return new WaitForEndOfFrame();
         steamLobby.HostLobby();
     }
 }

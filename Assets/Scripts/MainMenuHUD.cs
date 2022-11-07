@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using TheraBytes.BetterUi;
 
 public class MainMenuHUD : MonoBehaviour
 {
     [SerializeField]private GameObject MainMenu, PlayMenu, HostMenu, JoinMenu, SettingsMenu;
+    [SerializeField] private BetterTextMeshProInputField addressField;
 
     private void Start()
     {
@@ -45,19 +47,19 @@ public class MainMenuHUD : MonoBehaviour
         HIS_NetworkManager.instance.StartClient();
     }
 
-    public void IPOnValueChanged(string address)
+    public void IPOnValueChanged()
     {
-        HIS_NetworkManager.instance.networkAddress = address;
+        HIS_NetworkManager.instance.networkAddress = addressField.text;
     }
 
     public void HostTelepathyButton()
     {
-        StartHost.instance.HostTelepathy();
+        StartCoroutine(StartHost.instance.HostTelepathy());
     }
 
     public void HostSteamButton()
     {
-        StartHost.instance.HostSteamLobby();
+        StartCoroutine(StartHost.instance.HostSteamLobby());
     }
 
     public void BackButton()

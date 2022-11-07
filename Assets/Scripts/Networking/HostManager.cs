@@ -9,23 +9,20 @@ public class HostManager : MonoBehaviour
 
     [SerializeField] private Transport steamTransport, telepathyTransport;
 
-    private HIS_NetworkManager networkManager;
-
-
     private void Start()
     {
         instance = this;
-        networkManager = GetComponent<HIS_NetworkManager>();
+        SetSteamTransport();
     }
 
-    public void setSteamTransport()
+    public void SetSteamTransport()
     {
-       // networkManager.
+        HIS_NetworkManager.instance.setTransport(steamTransport);
     }
 
-    public void setTelepathyTransport()
+    public void SetTelepathyTransport()
     {
-
+        HIS_NetworkManager.instance.setTransport(telepathyTransport);
     }
 
 }

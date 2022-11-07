@@ -12,7 +12,6 @@ public class HostManager : MonoBehaviour
     private void Start()
     {
         instance = this;
-        SetSteamTransport();
     }
 
     public void SetSteamTransport()

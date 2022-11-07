@@ -26,5 +26,7 @@ public class StartHost : MonoBehaviour
         HostManager.instance.SetSteamTransport();
         yield return new WaitForEndOfFrame();
         steamLobby.HostLobby();
+
+        
     }
 }

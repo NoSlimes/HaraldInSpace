@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using TheraBytes.BetterUi;
+using Steamworks;
 
 public class MainMenuHUD : MonoBehaviour
 {
@@ -45,6 +46,11 @@ public class MainMenuHUD : MonoBehaviour
     public void JoinTelepathyButton()
     {
         HIS_NetworkManager.instance.StartClient();
+    }
+
+    public void JoinSteamButton()
+    {
+        SteamFriends.ActivateGameOverlay("friends");
     }
 
     public void IPOnValueChanged()

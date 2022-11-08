@@ -22,7 +22,7 @@ public class HIS_NetworkManager : NetworkManager
 
         player.SetDisplayName($"Player {numPlayers}");
 
-        GameManager.instance.players.Add(player.gameObject);
+        GameManager.players.Add(player.gameObject);
     }
 
     public override void ServerChangeScene(string newSceneName)

@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class FollowerController : MonoBehaviour
+public class FollowerController : NetworkBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform followTarget;
 
-    // Update is called once per frame
-    void Update()
+    [Command]
+    public void CMDSetFollowTarget(NetworkConnectionToClient conn)
     {
-        
+        followTarget = conn.identity.transform;
     }
 }

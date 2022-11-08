@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public List<GameObject> players;
+    public static List<GameObject> players;
 
     private void Start()
     {

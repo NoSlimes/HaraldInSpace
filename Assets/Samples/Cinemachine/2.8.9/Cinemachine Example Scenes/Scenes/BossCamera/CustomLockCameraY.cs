@@ -2,7 +2,7 @@ using UnityEngine;
 using Cinemachine;
 
 /// <summary>
-/// An add-on module for Cinemachine Virtual Camera that locks the camera's Y co-ordinate
+/// An add-on module for Cinemachine Virtual playerCamera that locks the camera's Y co-ordinate
 /// </summary>
 [ExecuteAlways]
 [SaveDuringPlay]

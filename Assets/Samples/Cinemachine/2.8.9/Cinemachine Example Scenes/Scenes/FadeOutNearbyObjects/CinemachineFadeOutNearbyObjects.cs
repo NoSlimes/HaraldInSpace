@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Cinemachine.Examples
 {
     /// <summary>
-    /// An example add-on module for Cinemachine Virtual Camera for controlling
+    /// An example add-on module for Cinemachine Virtual playerCamera for controlling
     /// the FadeOut shader included in our example package.
     /// </summary>
     [AddComponentMenu("")] // Hide in menu

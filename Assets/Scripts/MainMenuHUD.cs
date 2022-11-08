@@ -113,7 +113,7 @@ public class MainMenuHUD : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             BackButton();
         }

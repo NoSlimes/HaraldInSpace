@@ -6,15 +6,22 @@ using Mirror;
 
 public class PlayerMovement : NetworkBehaviour
 {
-    [Header("Movement")]
-    [SerializeField] private float sprintSpeed = 2000;
-    [SerializeField] private float jumpStrength = 10000;
-    [SerializeField] private float walkSpeed = 1000;
+    private Vector3 PlayerMovementInput;
+    private Vector2 PlayerMouseInput;
 
-    [SerializeField] private float LerpTimeFOV = 3f;
+    [Header("Movement")]
+    [SerializeField] private float walkSpeed = 5f;
+    [SerializeField] private float sprintSpeed = 7.5f;
+    [SerializeField] private float jumpStrength = 10f;
+    public float speedMultiplier = 1f;
+
+    [Header("Camera")]
+    [SerializeField] private float SprinteFOVLerpTime = 3f;
+    public float CameraSensitivity = 3f;
+    private float xRotation;
 
     private Rigidbody playerBody;
-    private Camera Camera;
+    private Camera playerCamera;
     private Animator animator;
     private CapsuleCollider capsuleCollider;
 
@@ -24,8 +31,6 @@ public class PlayerMovement : NetworkBehaviour
     [Header("Ground Checking")]
     [SerializeField] private LayerMask groundMask;
 
-
-
     void Start()
     {
         speed = walkSpeed;
@@ -34,6 +39,70 @@ public class PlayerMovement : NetworkBehaviour
         playerStats = GetComponent<PlayerStats>();
         capsuleCollider = GetComponent<CapsuleCollider>();
 
+        CursorLock.LockCursor();
+    }
+
+    void Update()
+    {
+        if(!isLocalPlayer) { return; }
+        PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+
+        MovePlayer();
+        MovePlayerCamera();
+
+        if (playerBody.velocity.x != 0f || playerBody.velocity.z != 0f)
+        {
+            animator.SetBool("Walking", true);
+        }
+        else
+        {
+            animator.SetBool("Walking", false);
+        }
+    }
+
+    private void MovePlayer()
+    {
+        float moveSpeed = speed * speedMultiplier;
+        Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * moveSpeed;
+        playerBody.velocity = new Vector3(MoveVector.x, playerBody.velocity.y, MoveVector.z);
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            playerBody.AddForce(Vector3.up * jumpStrength, ForceMode.Impulse);
+        }
+
+        if(Input.GetButton("Sprint"))
+        {
+            speed = sprintSpeed;
+            float timeElapsed = 0f;
+            while (timeElapsed < SprinteFOVLerpTime)
+            {
+                playerCamera.fieldOfView = Mathf.Lerp(60f, 90f, timeElapsed / SprinteFOVLerpTime);
+                timeElapsed += Time.deltaTime;
+            }
+            playerCamera.fieldOfView = 90;
+        }
+        else
+        {
+            speed = walkSpeed;
+            float timeElapsed = 0f;
+            while (timeElapsed < SprinteFOVLerpTime)
+            {
+                playerCamera.fieldOfView = Mathf.Lerp(90f, 60f, timeElapsed / SprinteFOVLerpTime);
+                timeElapsed += Time.deltaTime;
+            }
+            playerCamera.fieldOfView = 60f;
+        }
+    }
+
+    private void MovePlayerCamera()
+    {
+        xRotation -= PlayerMouseInput.y * CameraSensitivity;
+        xRotation = Mathf.Clamp(xRotation, -75f, 75f);
+
+        transform.Rotate(0f, PlayerMouseInput.x * CameraSensitivity, 0f);
+        playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
 
     private bool isGrounded()
@@ -43,72 +112,10 @@ public class PlayerMovement : NetworkBehaviour
         return Physics.CheckSphere(pos, radius, groundMask);
     }
 
-
     public void AssignCamera()
     {
-        Camera = GetComponentInChildren<Camera>();
+        playerCamera = GetComponentInChildren<Camera>();
     }
-
-
-    private void HandleMovement()
-    {
-        if (isLocalPlayer)
-        {
-            speed = speed * playerStats.SpeedMultiplier;
-            float x = Input.GetAxis("Horizontal");
-            float z = Input.GetAxis("Vertical");
-
-            playerBody.AddRelativeForce(Vector3.right * (speed * x) * Time.deltaTime);
-            playerBody.AddRelativeForce(Vector3.forward * (speed * z) * Time.deltaTime);
-
-            if (Input.GetButtonDown("Jump") && isGrounded())
-            {
-                playerBody.AddForce(Vector3.up * jumpStrength * Time.deltaTime);
-                Debug.Log(isGrounded());
-            }
-
-            if (Input.GetButton("Sprint"))
-            {
-                speed = sprintSpeed;
-                float timeElapsed = 0f;
-                while(timeElapsed < LerpTimeFOV)
-                {
-                    Camera.fieldOfView = Mathf.Lerp(60f, 90f, timeElapsed / LerpTimeFOV);
-                    timeElapsed += Time.deltaTime;
-                }
-                Camera.fieldOfView = 90;
-
-            }
-            else
-            {
-                speed = walkSpeed;
-                float timeElapsed = 0f;
-                while (timeElapsed < LerpTimeFOV)
-                {
-                    Camera.fieldOfView = Mathf.Lerp(90f, 60f, timeElapsed / LerpTimeFOV);
-                    timeElapsed += Time.deltaTime;
-                }
-               Camera.fieldOfView = 60f;
-            }
-
-        }
-    }
-
-
-    void Update()
-    {
-        HandleMovement();
-
-        if(playerBody.velocity != Vector3.zero)
-        {
-            animator.SetBool("Walking", true);
-        }
-        else
-        {
-            animator.SetBool("Walking", false);
-        }
-    }
-    
 
 
 }

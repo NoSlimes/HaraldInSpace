@@ -43,6 +43,10 @@ public class InteractableController : NetworkBehaviour
                         NetworkDoor networkDoor = hit.transform.GetComponentInParent<NetworkDoor>();
                         networkDoor.ToggleDoor();
                         break;
+                    case "Follower":
+                        FollowerController controller = hit.transform.GetComponent<FollowerController>();
+                      //  controller.CMDSetFollowTarget();
+                        break;
                 }
             }
             

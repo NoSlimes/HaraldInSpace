@@ -382,10 +382,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  sprintSpeed: 2000
-  jumpStrength: 10000
-  walkSpeed: 1000
-  LerpTimeFOV: 3
+  walkSpeed: 5
+  sprintSpeed: 7.5
+  jumpStrength: 100
+  speedMultiplier: 1
+  SprinteFOVLerpTime: 3
+  CameraSensitivity: 3
   groundMask:
     serializedVersion: 2
     m_Bits: 2147483648

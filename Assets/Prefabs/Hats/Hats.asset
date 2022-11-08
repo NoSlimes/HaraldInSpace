@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb742c589569ca94d8503bd0ce56ed80, type: 3}
+  m_Name: Hats
+  m_EditorClassIdentifier: 
+  hats:
+  - hatPrefab: {fileID: 4412902257676200227, guid: 55dd156650f7d194c90b746f640ec58c,
+      type: 3}
+    hatName: GasMask
+  - hatPrefab: {fileID: 565847191452001625, guid: d0c600865a82e604fb16b16fbe122642,
+      type: 3}
+    hatName: Helmet
+  - hatPrefab: {fileID: 7469502942052395345, guid: ac76ff5cfc5917c4a89508c66d6cb6c9,
+      type: 3}
+    hatName: Hood
+  - hatPrefab: {fileID: 3477305550138829032, guid: 26c06ebcba84b1446981313ebe1b9df0,
+      type: 3}
+    hatName: KillerMask
+  - hatPrefab: {fileID: 7820550840928496763, guid: 76053d5c49049fa48b21eda847678762,
+      type: 3}
+    hatName: MasterChief
+  - hatPrefab: {fileID: 606897452729380986, guid: 31b45ed3e1d773a458dfd389fa9a840c,
+      type: 3}
+    hatName: NightVision

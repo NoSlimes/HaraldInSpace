@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - Berrybush
   - Door
+  - projectile
   layers:
   - Default
   - TransparentFX
@@ -39,7 +40,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Player
   - Ground
   m_SortingLayers:
   - name: Default

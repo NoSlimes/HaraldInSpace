@@ -35,9 +35,6 @@ public class InteractableController : NetworkBehaviour
                     case "Berrybush":
                         Berrybush berrybush = hit.transform.GetComponent<Berrybush>();
                         berrybush.CmdHarvest();
-
-                        //if(berrybush.harvestable)
-                        // Cursor.SetActive(true);
                         break;
                     case "Door":
                         NetworkDoor networkDoor = hit.transform.GetComponentInParent<NetworkDoor>();
@@ -45,7 +42,7 @@ public class InteractableController : NetworkBehaviour
                         break;
                     case "Follower":
                         FollowerController controller = hit.transform.GetComponent<FollowerController>();
-                      //  controller.CMDSetFollowTarget();
+                        controller.CMDSetFollowTarget(transform);
                         break;
                 }
             }

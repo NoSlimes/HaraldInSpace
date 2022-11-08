@@ -26,7 +26,7 @@ namespace FIMSpace.BonesStimulation
         [HideInInspector] public bool _editor_DrawGizmos = true;
 
         public bool DrawGizmos = true;
-        //[HideInInspector] public Type _editor_ViewCategory;
+        //[HideInInspector] public FriendlyType _editor_ViewCategory;
         //[HideInInspector] public EMD_SetupCategory _editor_SetupCategory = EMD_SetupCategory.Movement;
 
         #endregion

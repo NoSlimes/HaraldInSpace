@@ -617,9 +617,8 @@ GameObject:
   - component: {fileID: 7110359979937103471}
   - component: {fileID: 7702933239314773042}
   - component: {fileID: 6833060499808603389}
-  - component: {fileID: 6833060499808603390}
-  - component: {fileID: 6833060499808603391}
   - component: {fileID: -6276347432747587666}
+  - component: {fileID: 6833060499808603391}
   - component: {fileID: 913962806738660590}
   - component: {fileID: 9208562621389536484}
   m_Layer: 0
@@ -689,7 +688,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6833060499808603390
+--- !u!114 &-6276347432747587666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -698,15 +697,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7631000019041887445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8feacc6f967af04fac95a233008195d, type: 3}
+  m_Script: {fileID: 11500000, guid: 43c62377c38e69c4fb80ac858037ea5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookDistance: 1
-  wanderRadius: 10
-  rayOrigin: {fileID: 1685776423}
-  ignore:
-    serializedVersion: 2
-    m_Bits: 0
+  syncMode: 0
+  syncInterval: 0.1
+  followTarget: {fileID: 0}
+  speed: 5
+  runSpeed: 7.5
+  stopDistance: 0
 --- !u!114 &6833060499808603391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,18 +719,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 6833060499808603389}
---- !u!114 &-6276347432747587666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7631000019041887445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c62377c38e69c4fb80ac858037ea5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &913962806738660590
 MonoBehaviour:
   m_ObjectHideFlags: 0

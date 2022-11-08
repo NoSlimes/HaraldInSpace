@@ -20,7 +20,7 @@ public class HIS_NetworkManager : NetworkManager
 
         NetworkPlayer player = conn.identity.GetComponent<NetworkPlayer>();
 
-        player.SetDisplayName($"Player {numPlayers}");
+        //player.SetDisplayName($"Player {numPlayers}");
 
         GameManager.players.Add(player.gameObject);
     }

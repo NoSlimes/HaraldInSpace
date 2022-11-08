@@ -17,6 +17,7 @@ public class MainMenuHUD : MonoBehaviour
         HostMenu.SetActive(false);
         JoinMenu.SetActive(false);
         SettingsMenu.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("MainMenu");
     }
 
     public void SettingsButton()

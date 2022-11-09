@@ -252,7 +252,6 @@ Transform:
   - {fileID: 1180915728092712669}
   - {fileID: 1120714365}
   - {fileID: 4502413512660460379}
-  - {fileID: 3548221654085606875}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -656,7 +655,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063243777151507900}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: c5b34d5889c1be7429c350cf1809bba2, type: 3}
   m_Controller: {fileID: 9100000, guid: ef3a5c97fba663f45908432cbc8fd93b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -826,58 +825,6 @@ Transform:
   m_Father: {fileID: 8186663048118683002}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4212554944213895009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3548221654085606875}
-  - component: {fileID: 7484415365991286689}
-  m_Layer: 30
-  m_Name: harald (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3548221654085606875
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4212554944213895009}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1180915728472828908}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &7484415365991286689
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4212554944213895009}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c5b34d5889c1be7429c350cf1809bba2, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4274092129071086778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b58eee0b82f43124fb19d6942a596759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hats: {fileID: 0}
+  hatHolder: {fileID: 0}
 --- !u!1 &6854428086411083638
 GameObject:
   m_ObjectHideFlags: 0

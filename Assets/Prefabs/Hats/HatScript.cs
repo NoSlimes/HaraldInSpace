@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HatScript : MonoBehaviour
@@ -7,15 +5,17 @@ public class HatScript : MonoBehaviour
     [SerializeField] private Hats hats;
     [SerializeField] private Transform hatHolder;
 
-    private void setHat(string hatName)
-    {
-        /*for (int i = 0; i < hats.hats.Length; i++)
-        {
-            if(hatName = hats.hats[i].hatName)
-            {
+    private GameObject hat;
 
+    private void SetHat(string hatName)
+    {
+        for (int i = 0; i < hats.hatArray.Length; i++)
+        {
+            if(hatName == hats.hatArray[i].hatName)
+            {
+                hat = Instantiate(hats.hatArray[i].hatPrefab);
+                hat.transform.SetParent(this.transform);
             }
         }
-        GameObject hat = Instantiate(hats.hats[]);*/
     }
 }

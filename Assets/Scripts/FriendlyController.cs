@@ -4,7 +4,7 @@ using UnityEngine;
 using Mirror;
 using JetBrains.Annotations;
 
-public class FollowerController : NetworkBehaviour
+public class FriendlyController : NetworkBehaviour
 {
     [SyncVar][HideInInspector] public Transform followTarget;
 
@@ -25,8 +25,9 @@ public class FollowerController : NetworkBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         engine = GetComponent<AIEngine>();
+        speed = walkSpeed;
     }
 
     [Command]
@@ -56,6 +57,15 @@ public class FollowerController : NetworkBehaviour
                         speed = walkSpeed;
                     }
 
+                    if(engine.agent.velocity != Vector3.zero)
+                    {
+                        animator.SetBool("Walking", true);
+                    }
+                    else
+                    {
+                        animator.SetBool("Walking", false);
+                    }
+
                 }
                 break;
             case FriendlyType.Partyer:
@@ -63,13 +73,38 @@ public class FollowerController : NetworkBehaviour
                 break;
             default:
                 {
-                    engine.agent.SetDestination(engine.agent.RandomPosition(roamerDistance));
+                    if(engine.agent.remainingDistance <= engine.agent.stoppingDistance)
+                    {
+                        engine.agent.SetDestination(engine.agent.RandomPosition(roamerDistance));
+                    }
+                    if (engine.agent.velocity != Vector3.zero)
+                    {
+                        animator.SetBool("Walking", true);
+                    }
+                    else
+                    {
+                        animator.SetBool("Walking", false);
+                    }
+
+                    if (engine.agent.remainingDistance > runDistance)
+                    {
+                        speed = runSpeed;
+                    }
+                    else
+                    {
+                        speed = walkSpeed;
+                    }
                 }
                 break;
         }
      
         
         
+
+    }
+
+    private void Update()
+    {
 
     }
     public enum FriendlyType

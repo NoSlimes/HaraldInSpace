@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 1423212316598356581}
   - component: {fileID: 7463234065760285191}
   - component: {fileID: 6961505580968259375}
+  - component: {fileID: -9016266891344975533}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: Player
@@ -207,3 +208,19 @@ MonoBehaviour:
   showOverlay: 0
   overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   target: {fileID: 0}
+--- !u!114 &-9016266891344975533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423212316598356585}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8674f7434a89bf14c9cf7d4c0165e17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  mouseSensitivity: 100
+  playerBody: {fileID: 0}

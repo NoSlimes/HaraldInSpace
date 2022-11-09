@@ -1333,7 +1333,7 @@ MonoBehaviour:
   autoStartServerBuild: 1
   serverTickRate: 30
   offlineScene: Assets/Scenes/MainMenu.unity
-  onlineScene: Assets/Scenes/Labyrinth.unity
+  onlineScene: Assets/Scenes/Main.unity
   transport: {fileID: 623527387}
   networkAddress: localhost
   maxConnections: 8

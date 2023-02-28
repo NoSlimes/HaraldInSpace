@@ -174,7 +174,7 @@ namespace FIMSpace.BonesStimulation
                 EditorGUILayout.BeginHorizontal();
                 EditorGUIUtility.labelWidth = 110;
                 EditorGUILayout.PropertyField(dprop);
-                dprop.NextVisible(false); 
+                dprop.NextVisible(false);
                 EditorGUILayout.PropertyField(dprop);
                 EditorGUILayout.EndHorizontal();
                 dprop.NextVisible(false);
@@ -186,11 +186,53 @@ namespace FIMSpace.BonesStimulation
                 EditorGUILayout.PropertyField(sp_Compens);
 
                 EditorGUILayout.EndVertical();
+
+
+
+
+                FGUI_Inspector.FoldHeaderStart(ref _foldoutExtraSettings, " Extra Settings", FGUI_Resources.BGInBoxStyle, FGUI_Resources.Tex_Tweaks, 19);
+
+                if (_foldoutExtraSettings)
+                {
+                    SerializedProperty sp_freeze = sp_BlendXAxis.Copy();
+                    //EditorGUILayout.BeginHorizontal();
+                    //EditorGUIUtility.labelWidth = 87;
+                    //EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    //EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    //EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    //EditorGUIUtility.labelWidth = 0;
+                    //EditorGUILayout.EndHorizontal();
+
+                    GUILayout.Space(6);
+                    EditorGUIUtility.labelWidth = 110;
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+
+                    EditorGUIUtility.labelWidth = 140;
+                    GUILayout.Space(6);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    EditorGUILayout.PropertyField(sp_freeze); sp_freeze.Next(false);
+                    GUILayout.Space(5);
+                    EditorGUIUtility.labelWidth = 0;
+
+                }
+
+                GUILayout.EndVertical();
+
+                GUILayout.Space(5);
+
             }
             if (Application.isPlaying) GUI.enabled = e;
 
             EditorGUILayout.EndVertical();
         }
+
+        bool _foldoutExtraSettings = false;
 
         private void AddBoneTo(BonesStimulator stim)
         {

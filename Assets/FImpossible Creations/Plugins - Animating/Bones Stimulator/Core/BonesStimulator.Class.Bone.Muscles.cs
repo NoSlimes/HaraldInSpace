@@ -10,6 +10,7 @@ namespace FIMSpace.BonesStimulation
             public FElasticTransform MotionMuscle { get; private set; }
             public FMuscle_Quaternion RotationMuscle { get; private set; }
             public FMuscle_Eulers EulerAnglesMuscle { get; private set; }
+            public float MomentDampen = 0f;
 
             public void InitMuscles()
             {
@@ -30,6 +31,7 @@ namespace FIMSpace.BonesStimulation
 
                 srcAnimatorPosition = transform.position;
                 srcAnimatorRotation = transform.rotation;
+                srcAnimatorLocRotation = transform.localRotation;
             }
         }
     }

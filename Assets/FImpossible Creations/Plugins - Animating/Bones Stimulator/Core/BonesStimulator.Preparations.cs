@@ -59,11 +59,16 @@ namespace FIMSpace.BonesStimulation
 
             Vibrate_Initialize();
             SqueezeInitialize();
+            USER_CheckExtraSettingsAfterManualChange();
 
             if (CompensationTransform) previousPosition = CompensationTransform.position;
             Initialized = true;
         }
 
+        void OnValidate()
+        {
+            USER_CheckExtraSettingsAfterManualChange();
+        }
 
         public void CheckIfCanUpdate()
         {
@@ -117,6 +122,15 @@ namespace FIMSpace.BonesStimulation
 
         public void PreCalibrateBones()
         {
+
+            #region Performance Measure START
+#if UNITY_EDITOR
+            MeasurePerformanceUpdate(true);
+
+#endif
+            #endregion
+
+
             if (ArtificialHelpBone != null)
             {
                 ArtificialHelpBone.transform.localPosition = ArtificialHelpBone.initLocalPos;
@@ -156,6 +170,13 @@ namespace FIMSpace.BonesStimulation
                     }
                 }
             }
+
+            #region Performance Measure END
+#if UNITY_EDITOR
+            MeasurePerformanceUpdate(false);
+
+#endif
+            #endregion
         }
 
 
@@ -185,6 +206,7 @@ namespace FIMSpace.BonesStimulation
             bone.MotionMuscle.RotationRapidness = 1f - MildRotation;
 
             bone.MotionMuscle.PositionMuscle.BrakePower = 1f - Smoothing;
+
             bone.MotionMuscle.PositionMuscle.Damping = Damping * 40f;
 
             // Rotation Muscles -----------------------------------
@@ -204,6 +226,14 @@ namespace FIMSpace.BonesStimulation
 
                 bone.EulerAnglesMuscle.BrakePower = 1f - RotationsSwinginess;
                 bone.EulerAnglesMuscle.Damping = RotationsDamping * 40f;
+            }
+
+            if (bone.MomentDampen > 0f)
+            {
+                bone.MotionMuscle.PositionMuscle.Damping += 40f * bone.MomentDampen;
+                if (!UseEulerRotation) bone.RotationMuscle.Damping += 40f * bone.MomentDampen;
+                else bone.EulerAnglesMuscle.Damping += 40f * bone.MomentDampen;
+                bone.MomentDampen -= delta * 4f;
             }
         }
 

@@ -43,6 +43,7 @@ namespace FIMSpace.BonesStimulation
         SerializedProperty sp_DistanceFrom;
         SerializedProperty sp_UseCollisions;
         SerializedProperty sp_AutoHelperOffset;
+        SerializedProperty sp_BlendXAxis;
 
         private void OnEnable()
         {
@@ -57,6 +58,7 @@ namespace FIMSpace.BonesStimulation
             sp_DistanceFrom = serializedObject.FindProperty("DistanceFrom");
             sp_UseCollisions = serializedObject.FindProperty("UseCollisions");
             sp_AutoHelperOffset = serializedObject.FindProperty("AutoHelperOffset");
+            sp_BlendXAxis = serializedObject.FindProperty("BlendXAxis");
         }
 
 

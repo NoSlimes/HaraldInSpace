@@ -38,6 +38,27 @@ namespace FIMSpace.BonesStimulation
                 DrawNewGUI();
 
             serializedObject.ApplyModifiedProperties();
+
+
+
+            if (Application.isPlaying)
+            {
+                Get._perf_main.Editor_DisplayFoldoutButton(-9, -5);
+                if (Get._perf_main._foldout)
+                {
+                    Get._perf_preUpd.Editor_DisplayAlways("Preparation:");
+                    Get._perf_main.Editor_DisplayAlways("Main Algorithm:");
+
+                    long totalT = 0;
+                    totalT += Get._perf_preUpd.AverageTicks;
+                    totalT += Get._perf_main.AverageTicks;
+                    dynamic totalMS = 0;
+                    totalMS += Get._perf_preUpd.AverageMS;
+                    totalMS += Get._perf_main.AverageMS;
+                    EditorGUILayout.LabelField("Total = " + totalT + " ticks  " + totalMS + "ms");
+                }
+            }
+
         }
 
 

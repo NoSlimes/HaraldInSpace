@@ -31,6 +31,35 @@ namespace FIMSpace.BonesStimulation
 
         #endregion
 
+
+        #region Performance Measuring
+
+        void MeasurePerformanceUpdate(bool start)
+        {
+#if UNITY_EDITOR
+            if (start) _perf_preUpd.Start(gameObject); else _perf_preUpd.Finish();
+#endif
+        }
+
+        void MeasurePerformanceMain(bool start)
+        {
+#if UNITY_EDITOR
+            if (start) _perf_main.Start(gameObject); else _perf_main.Finish();
+#endif
+        }
+
+
+
+#if UNITY_EDITOR
+
+        public FDebug_PerformanceTest _perf_preUpd = new FDebug_PerformanceTest();
+        public FDebug_PerformanceTest _perf_main = new FDebug_PerformanceTest();
+
+#endif
+
+        #endregion
+
+
         public enum EStimulationMode
         { Muscles, Vibrate, Squeezing, Collisions }
         public EStimulationMode _editor_SelCategory = EStimulationMode.Muscles;

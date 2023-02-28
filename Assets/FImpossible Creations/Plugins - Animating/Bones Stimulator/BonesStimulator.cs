@@ -28,6 +28,7 @@ namespace FIMSpace.BonesStimulation
         public bool AutoHelperOffset = true;
         public Vector3 HelperOffset = Vector3.zero;
 
+
         void Start()
         {
             Initialize();
@@ -76,6 +77,14 @@ namespace FIMSpace.BonesStimulation
         {
             if (!updateStimulator) return;
 
+            #region Performance Measure START
+#if UNITY_EDITOR
+            MeasurePerformanceMain(true);
+
+#endif
+            #endregion
+
+
             BeginUpdate();
             PhysicsUpdate();
 
@@ -84,6 +93,16 @@ namespace FIMSpace.BonesStimulation
             UpdateMusclesLogics();
 
             PostPhysics();
+            PostProcessing();
+
+
+            #region Performance Measure END
+#if UNITY_EDITOR
+            MeasurePerformanceMain(false);
+
+#endif
+            #endregion
+
         }
     }
 }

@@ -97,6 +97,42 @@ namespace FIMSpace.BonesStimulation
         protected List<FImp_ColliderData_Base> CollidersDataToCheck;
 
 
+        //[Tooltip("Freeze local X rotation axis")]
+        //public bool FreezeXAxis = false;
+        //[Tooltip("Freeze local Y rotation axis")]
+        //public bool FreezeYAxis = false;
+        //[Tooltip("Freeze local Z rotation axis")]
+        //public bool FreezeZAxis = false;
+
+        [Tooltip("Set zero to freeze X axis rotation")]
+        [Range(0f,1f)]
+        public float BlendXAxis = 1f;
+        [Tooltip("Set zero to freeze Y axis rotation")]
+        [Range(0f,1f)]
+        public float BlendYAxis = 1f;
+        [Tooltip("Set zero to freeze Z axis rotation")]
+        [Range(0f,1f)]
+        public float BlendZAxis = 1f;
+
+        [Space(4)]
+        [FPD_MinMaxSlider(-180,180)]
+        [Tooltip("Limit max rotation angle difference between current animation rotation and animated rotation (+-180 = unlimited)")]
+        public Vector2 LimitXAxisRotation = new Vector2(-180, 180);
+        [FPD_MinMaxSlider(-180,180)]
+        [Tooltip("Limit max rotation angle difference between current animation rotation and animated rotation (+-180 = unlimited)")]
+        public Vector2 LimitYAxisRotation = new Vector2(-180, 180);
+        [FPD_MinMaxSlider(-180,180)]
+        [Tooltip("Limit max rotation angle difference between current animation rotation and animated rotation (+-180 = unlimited)")]
+        public Vector2 LimitZAxisRotation = new Vector2(-180,180);
+
+        [Space(4)]
+        [Range(0f,1f)]
+        public float ElasticLimits = 0f;
+        [FPD_FixedCurveWindow]
+        public AnimationCurve ElasticLimitCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+        [Range(0f, 1f)]
+        public float DampenOnLimits = 0f;
+
         #endregion
 
 

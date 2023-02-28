@@ -12,9 +12,11 @@ public class NetworkPlayer : NetworkBehaviour
 
     [SyncVar(hook = nameof(HandleDisplayNameUpdated))][SerializeField] private string displayName = "No";
 
+    [Client]
     private void Start()
     {
         SetMyName();
+        DontDestroyOnLoad(gameObject);
     }
 
     #region Server
@@ -48,6 +50,7 @@ public class NetworkPlayer : NetworkBehaviour
 
     public void SetMyName()
     {
+        Debug.Log("hej");
         if(!hasAuthority) { return; }
         if (SteamManager.Initialized)
         {

@@ -7,19 +7,30 @@ namespace FIMSpace.FEditor
     public class FPD_FoldFrame : PropertyDrawer
     {
         FPD_FoldFrameAttribute Attribute { get { return ((FPD_FoldFrameAttribute)base.attribute); } }
+        SerializedProperty[] props = null;
 
         //private bool folded = false;
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            SerializedProperty[] props = new SerializedProperty[Attribute.VariablesToStore.Length];
+            //EditorGUI.BeginProperty(position, label, property);
 
-            for (int i = 0; i < props.Length; i++)
+            if (Attribute == null) return;
+            if (Attribute.VariablesToStore == null) return;
+
+            if (props == null)
             {
-                props[i] = property.serializedObject.FindProperty(Attribute.VariablesToStore[i]);
+                props = new SerializedProperty[Attribute.VariablesToStore.Length];
+
+                for (int i = 0; i < props.Length; i++)
+                {
+                    props[i] = property.serializedObject.FindProperty(Attribute.VariablesToStore[i]);
+                }
             }
 
-            GUILayout.BeginVertical(FGUI_Inspector.Style(new Color32(250, 250, 250, 75)));
+            GUILayout.Space(7);
+            GUILayout.BeginVertical(FGUI_Resources.BGInBoxStyle);
+
             EditorGUI.indentLevel++;
 
             GUIStyle foldBold = EditorStyles.foldout;
@@ -28,6 +39,7 @@ namespace FIMSpace.FEditor
 
             if (Attribute.Folded)
             {
+                GUILayout.Space(3);
                 for (int i = 0; i < props.Length; i++)
                 {
                     if (props[i] != null)
@@ -39,6 +51,8 @@ namespace FIMSpace.FEditor
 
             EditorGUI.indentLevel--;
             GUILayout.EndVertical();
+
+            //EditorGUI.EndProperty();
         }
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)

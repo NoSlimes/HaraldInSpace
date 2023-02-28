@@ -1,7 +1,7 @@
 ﻿__________________________________________________________________________________________
 
 Package Bones Stimulator
-Version 2.0.0.1
+Version 2.0.0.7
 
 Made by FImpossible Creations - Filip Moeglich
 https://www.FilipMoeglich.pl
@@ -28,6 +28,11 @@ to stimulate and play with parameters, test it in playmode to find desired effec
 Component is highly optimized and delivers self-optimization features.
 
 
+Version 2.0.0.7:
+- Implemented Experimental Features:
+Blend Rotation Per axis (possibility to freeze axis rotation)
+Limit Rotation Per axis
+- Playmode performance measure debug GUI
 
 Version 2.0.0.1:
 - Added "Ensure Rotation" toggle, to fix some jittering which could be visible in some exception situation models / animations, with use of Rotation Based Muscles
